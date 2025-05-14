@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
 export default function Login() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  const navigate = useNavigate(); 
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
@@ -14,7 +14,11 @@ export default function Login() {
         password,
       });
 
-      alert(res.data); // Customize based on API response
+      // You can store user data/token here if needed
+      // localStorage.setItem("user", JSON.stringify(res.data));
+
+      alert("Login successful!");
+      navigate("/dashboard"); 
     } catch (err) {
       console.error(err);
       alert("Login failed");
