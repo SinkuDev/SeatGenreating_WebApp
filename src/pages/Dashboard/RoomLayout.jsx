@@ -21,7 +21,7 @@ const RoomLayout = () => {
   };
 
   return (
-    <div className="p-8 bg-white shadow-xl rounded-xl w-full max-w-5xl mx-auto">
+    <div className="p-8 bg-white shadow-xl rounded-xl w-full max-w-5xl mx-auto mt-8">
       <h2 className="text-3xl font-bold text-blue-700 mb-2">Room Layout Designer</h2>
       <p className="mb-6 text-gray-600">Define your classroom layout and preview seating in real time.</p>
 

@@ -11,8 +11,6 @@ const DashboardLayout = () => {
      
       <div className="w-64 bg-white shadow-md">
         <Sidebar />
-       
-
       </div>
 
 
